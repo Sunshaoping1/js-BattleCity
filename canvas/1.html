@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+</body>
+<script>
+    let canvas = document.getElementById("canvas")
+    let ctx = canvas.getContext("2d")
+
+    ctx.fillStyle = "rgb(200,0,0)"
+    ctx.fillRect(10,100,180,80)
+
+    ctx.beginPath();
+    //设置样式
+ctx.strokeStyle = "green"
+ctx.lineWindth = 2;
+
+ctx.moveTo(20, 140); // Move pen to bottom-left corner
+ctx.lineTo(120, 10); // Line to top corner
+ctx.lineTo(220, 140); // Line to bottom-right corner
+ctx.closePath(); // Line to bottom-left corner
+
+
+ctx.stroke();
+</script>
+</html>

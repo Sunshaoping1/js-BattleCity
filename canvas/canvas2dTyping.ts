@@ -1,0 +1,1 @@
+export default  CanvasRenderingContext2D

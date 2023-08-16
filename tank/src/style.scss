@@ -1,0 +1,19 @@
+body{
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #app{
+        background-image: url("./static/images/cover/cover.png");
+        background-size: cover;
+        background-position: center;
+
+        cursor: pointer;
+        //不固定大小，根据画布大小来设置宽高。（适应不同的显示器）
+
+        background-color: green;
+    }
+}
